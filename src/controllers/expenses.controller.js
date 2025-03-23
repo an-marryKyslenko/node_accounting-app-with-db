@@ -64,7 +64,7 @@ const deleteById = async (req, res) => {
     return;
   }
 
-  await service.deleteById(id);
+  service.deleteById(id);
 
   res.sendStatus(204);
 };
