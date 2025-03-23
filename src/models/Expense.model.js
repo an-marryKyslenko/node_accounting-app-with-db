@@ -34,7 +34,7 @@ const Expense = sequelize.define(
   },
 );
 
-Expense.sync({ alter: true });
+Expense.sync({ force: true });
 
 module.exports = {
   Expense,
